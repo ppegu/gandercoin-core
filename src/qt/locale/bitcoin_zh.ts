@@ -1,207 +1,207 @@
 <TS language="zh" version="2.1">
-<context>
+  <context>
     <name>AddressBookPage</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AddressTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AskPassphraseDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BanTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Error</source>
-        <translation>错误</translation>
+      <source>Error</source>
+      <translation>错误</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>警告</translation>
+      <source>Warning</source>
+      <translation>警告</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Date</source>
-        <translation>日期</translation>
+      <source>Date</source>
+      <translation>日期</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>EditAddressDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>FreespaceChecker</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>HelpMessageDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>Intro</name>
     <message>
-        <source>Error</source>
-        <translation>错误</translation>
+      <source>Error</source>
+      <translation>错误</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ModalOverlay</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OpenURIDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OptionsDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OverviewPage</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PaymentServer</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PeerTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject::QObject</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QRImageWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RPCConsole</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveCoinsDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveRequestDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RecentRequestsTableModel</name>
     <message>
-        <source>Date</source>
-        <translation>日期</translation>
+      <source>Date</source>
+      <translation>日期</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsDialog</name>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>余额不足</translation>
+      <source>Insufficient funds!</source>
+      <translation>余额不足</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>选择...</translation>
+      <source>Choose...</source>
+      <translation>选择...</translation>
     </message>
     <message>
-        <source>The recipient address is not valid. Please recheck.</source>
-        <translation>收款人地址无效，请再次确认。</translation>
+      <source>The recipient address is not valid. Please recheck.</source>
+      <translation>收款人地址无效，请再次确认。</translation>
     </message>
     <message>
-        <source>Pay only the required fee of %1</source>
-        <translation>仅支付全额的%1</translation>
+      <source>Pay only the required fee of %1</source>
+      <translation>仅支付全额的%1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Litecoin address</source>
-        <translation>警告：莱特币地址无效</translation>
+      <source>Warning: Invalid Gandercoin address</source>
+      <translation>警告：莱特币地址无效</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsEntry</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendConfirmationDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ShutdownWindow</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SignVerifyMessageDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SplashScreen</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TrafficGraphWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDesc</name>
     <message>
-        <source>Date</source>
-        <translation>日期</translation>
+      <source>Date</source>
+      <translation>日期</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDescDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionTableModel</name>
     <message>
-        <source>Date</source>
-        <translation>日期</translation>
+      <source>Date</source>
+      <translation>日期</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionView</name>
     <message>
-        <source>Date</source>
-        <translation>日期</translation>
+      <source>Date</source>
+      <translation>日期</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletFrame</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletView</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>根据费率标准，本次转账超额</translation>
+      <source>Transaction too large for fee policy</source>
+      <translation>根据费率标准，本次转账超额</translation>
     </message>
     <message>
-        <source>Transaction too large</source>
-        <translation>超额转账</translation>
+      <source>Transaction too large</source>
+      <translation>超额转账</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>警告</translation>
+      <source>Warning</source>
+      <translation>警告</translation>
     </message>
     <message>
-        <source>Loading addresses...</source>
-        <translation>正在载入地址...</translation>
+      <source>Loading addresses...</source>
+      <translation>正在载入地址...</translation>
     </message>
     <message>
-        <source>Insufficient funds</source>
-        <translation>余额不足</translation>
+      <source>Insufficient funds</source>
+      <translation>余额不足</translation>
     </message>
     <message>
-        <source>Loading wallet...</source>
-        <translation>正在载入钱包...</translation>
+      <source>Loading wallet...</source>
+      <translation>正在载入钱包...</translation>
     </message>
     <message>
-        <source>Rescanning...</source>
-        <translation>再次扫描...</translation>
+      <source>Rescanning...</source>
+      <translation>再次扫描...</translation>
     </message>
     <message>
-        <source>Done loading</source>
-        <translation>载入完成</translation>
+      <source>Done loading</source>
+      <translation>载入完成</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>错误</translation>
+      <source>Error</source>
+      <translation>错误</translation>
     </message>
-</context>
-</TS>
+  </context>
+</TS>;

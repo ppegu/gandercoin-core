@@ -1,16 +1,16 @@
 ---
-name: "litecoin-dmg-signer"
+name: "gandercoin-dmg-signer"
 suites:
-- "trusty"
+  - "trusty"
 architectures:
-- "amd64"
+  - "amd64"
 packages:
-- "faketime"
+  - "faketime"
 remotes:
-- "url": "https://github.com/litecoin-project/litecoin-detached-sigs.git"
-  "dir": "signature"
+  - "url": "https://github.com/gandercoin-project/gandercoin-detached-sigs.git"
+    "dir": "signature"
 files:
-- "litecoin-osx-unsigned.tar.gz"
+  - "gandercoin-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=litecoin-osx-unsigned.tar.gz
-  SIGNED=litecoin-osx-signed.dmg
+  UNSIGNED=gandercoin-osx-unsigned.tar.gz
+  SIGNED=gandercoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

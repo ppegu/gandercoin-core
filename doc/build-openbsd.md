@@ -1,13 +1,12 @@
-OpenBSD build guide
-======================
+# OpenBSD build guide
+
 (updated for OpenBSD 6.0)
 
 This guide describes how to build litecoind and command-line utilities on OpenBSD.
 
 As OpenBSD is most common as a server OS, we will not bother with the GUI.
 
-Preparation
--------------
+## Preparation
 
 Run the following as root to install the base dependencies for building:
 
@@ -18,10 +17,9 @@ pkg_add automake # (select highest version, e.g. 1.15)
 pkg_add python # (select highest version, e.g. 3.5)
 ```
 
-The default C++ compiler that comes with OpenBSD 5.9 is g++ 4.2. This version is old (from 2007), and is not able to compile the current version of Litecoin Core, primarily as it has no C++11 support, but even before there were issues. So here we will be installing a newer compiler.
+The default C++ compiler that comes with OpenBSD 5.9 is g++ 4.2. This version is old (from 2007), and is not able to compile the current version of Gandercoin Core, primarily as it has no C++11 support, but even before there were issues. So here we will be installing a newer compiler.
 
-GCC
--------
+## GCC
 
 You can install a newer version of gcc with:
 
@@ -39,10 +37,10 @@ Do not use `pkg_add boost`! The boost version installed thus is compiled using t
     ...
     Segmentation fault (core dumped)
 
-This makes it necessary to build boost, or at least the parts used by Litecoin Core, manually:
+This makes it necessary to build boost, or at least the parts used by Gandercoin Core, manually:
 
 ```
-# Pick some path to install boost to, here we create a directory within the litecoin directory
+# Pick some path to install boost to, here we create a directory within the gandercoin directory
 LITECOIN_ROOT=$(pwd)
 BOOST_PREFIX="${LITECOIN_ROOT}/boost"
 mkdir -p $BOOST_PREFIX
@@ -58,7 +56,7 @@ cd boost_1_61_0
 # Also here: https://gist.githubusercontent.com/laanwj/bf359281dc319b8ff2e1/raw/92250de8404b97bb99d72ab898f4a8cb35ae1ea3/patch-boost_test_impl_execution_monitor_ipp.patch
 patch -p0 < /usr/ports/devel/boost/patches/patch-boost_test_impl_execution_monitor_ipp
 
-# Build w/ minimum configuration necessary for litecoin
+# Build w/ minimum configuration necessary for gandercoin
 echo 'using gcc : : eg++ : <cxxflags>"-fvisibility=hidden -fPIC" <linkflags>"" <archiver>"ar" <striper>"strip"  <ranlib>"ranlib" <rc>"" : ;' > user-config.jam
 config_opts="runtime-link=shared threadapi=pthread threading=multi link=static variant=release --layout=tagged --build-type=complete --user-config=user-config.jam -sNO_BZIP2=1"
 ./bootstrap.sh --without-icu --with-libraries=chrono,filesystem,program_options,system,thread,test
@@ -74,7 +72,7 @@ See "Berkeley DB" in [build_unix.md](build_unix.md) for instructions on how to b
 You cannot use the BerkeleyDB library from ports, for the same reason as boost above (g++/libstd++ incompatibility).
 
 ```bash
-# Pick some path to install BDB to, here we create a directory within the litecoin directory
+# Pick some path to install BDB to, here we create a directory within the gandercoin directory
 LITECOIN_ROOT=$(pwd)
 BDB_PREFIX="${LITECOIN_ROOT}/db4"
 mkdir -p $BDB_PREFIX
@@ -108,19 +106,22 @@ The change will only affect the current shell and processes spawned by it. To
 make the change system-wide, change `datasize-cur` and `datasize-max` in
 `/etc/login.conf`, and reboot.
 
-### Building Litecoin Core
+### Building Gandercoin Core
 
 **Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
 
 Preparation:
+
 ```bash
 export AUTOCONF_VERSION=2.69 # replace this with the autoconf version that you installed
 export AUTOMAKE_VERSION=1.15 # replace this with the automake version that you installed
 ./autogen.sh
 ```
+
 Make sure `BDB_PREFIX` and `BOOST_PREFIX` are set to the appropriate paths from the above steps.
 
 To configure with wallet:
+
 ```bash
 ./configure --with-gui=no --with-boost=$BOOST_PREFIX \
     CC=egcc CXX=eg++ CPP=ecpp \
@@ -128,19 +129,20 @@ To configure with wallet:
 ```
 
 To configure without wallet:
+
 ```bash
 ./configure --disable-wallet --with-gui=no --with-boost=$BOOST_PREFIX \
     CC=egcc CXX=eg++ CPP=ecpp
 ```
 
 Build and run the tests:
+
 ```bash
 gmake # can use -jX here for parallelism
 gmake check
 ```
 
-Clang (not currently working)
-------------------------------
+## Clang (not currently working)
 
 WARNING: This is outdated, needs to be updated for OpenBSD 6.0 and re-tried.
 

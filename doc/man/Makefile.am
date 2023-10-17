@@ -5,9 +5,9 @@ if BUILD_BITCOIND
 endif
 
 if ENABLE_QT
-  dist_man1_MANS+=litecoin-qt.1
+  dist_man1_MANS+=gandercoin-qt.1
 endif
 
 if BUILD_BITCOIN_UTILS
-  dist_man1_MANS+=litecoin-cli.1 litecoin-tx.1
+  dist_man1_MANS+=gandercoin-cli.1 gandercoin-tx.1
 endif

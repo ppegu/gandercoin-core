@@ -1,13 +1,13 @@
-Benchmarking
-============
+# Benchmarking
 
-Litecoin Core has an internal benchmarking framework, with benchmarks
+Gandercoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling litecoin-core, the benchmarks can be run with:
+After compiling gandercoin-core, the benchmarks can be run with:
 `src/bench/bench_litecoin`
 
 The output will look similar to:
+
 ```
 #Benchmark,count,min,max,average
 RIPEMD160,448,0.001245033173334,0.002638196945190,0.002461894814457
@@ -23,6 +23,7 @@ Trig,67108864,0.000000014997003,0.000000015448112,0.000000015188842
 ```
 
 More benchmarks are needed for, in no particular order:
+
 - Script Validation
 - CCoinDBView caching
 - Coins database

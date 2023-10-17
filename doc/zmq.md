@@ -5,8 +5,8 @@ connections, inter-process communication, and shared-memory,
 providing various message-oriented semantics such as publish/subscribe,
 request/reply, and push/pull.
 
-The Litecoin Core daemon can be configured to act as a trusted "border
-router", implementing the litecoin wire protocol and relay, making
+The Gandercoin Core daemon can be configured to act as a trusted "border
+router", implementing the gandercoin wire protocol and relay, making
 consensus decisions, maintaining the local blockchain database,
 broadcasting locally generated transactions into the network, and
 providing a queryable RPC interface to interact on a polled basis for
@@ -33,19 +33,19 @@ buffering or reassembly.
 
 ## Prerequisites
 
-The ZeroMQ feature in Litecoin Core requires ZeroMQ API version 4.x or
+The ZeroMQ feature in Gandercoin Core requires ZeroMQ API version 4.x or
 newer. Typically, it is packaged by distributions as something like
-*libzmq3-dev*. The C++ wrapper for ZeroMQ is *not* needed.
+_libzmq3-dev_. The C++ wrapper for ZeroMQ is _not_ needed.
 
 In order to run the example Python client scripts in contrib/ one must
-also install *python3-zmq*, though this is not necessary for daemon
+also install _python3-zmq_, though this is not necessary for daemon
 operation.
 
 ## Enabling
 
 By default, the ZeroMQ feature is automatically compiled in if the
-necessary prerequisites are found.  To disable, use --disable-zmq
-during the *configure* step of building litecoind:
+necessary prerequisites are found. To disable, use --disable-zmq
+during the _configure_ step of building litecoind:
 
     $ ./configure --disable-zmq (other options)
 
@@ -75,7 +75,7 @@ notification `-zmqpubhashtx` the topic is `hashtx` (no null
 terminator) and the body is the hexadecimal transaction hash (32
 bytes).
 
-These options can also be provided in litecoin.conf.
+These options can also be provided in gandercoin.conf.
 
 ZeroMQ endpoint specifiers for TCP (and others) are documented in the
 [ZeroMQ API](http://api.zeromq.org/4-0:_start).

@@ -1,593 +1,598 @@
 <TS language="mk_MK" version="2.1">
-<context>
+  <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Right-click to edit address or label</source>
-        <translation>Десен клик за уредување на адреса или етикета</translation>
+      <source>Right-click to edit address or label</source>
+      <translation>Десен клик за уредување на адреса или етикета</translation>
     </message>
     <message>
-        <source>Create a new address</source>
-        <translation>Креирај нова адреса</translation>
+      <source>Create a new address</source>
+      <translation>Креирај нова адреса</translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>&amp;Нова</translation>
+      <source>&amp;New</source>
+      <translation>&amp;Нова</translation>
     </message>
     <message>
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Копирај ја избраната адреса на системскиот клипборд</translation>
+      <source>
+        Copy the currently selected address to the system clipboard
+      </source>
+      <translation>
+        Копирај ја избраната адреса на системскиот клипборд
+      </translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>&amp;Копирај</translation>
+      <source>&amp;Copy</source>
+      <translation>&amp;Копирај</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>З&amp;атвори</translation>
+      <source>C&amp;lose</source>
+      <translation>З&amp;атвори</translation>
     </message>
     <message>
-        <source>Delete the currently selected address from the list</source>
-        <translation>Избриши ја избраната адреса од листата</translation>
+      <source>Delete the currently selected address from the list</source>
+      <translation>Избриши ја избраната адреса од листата</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Експортирај ги податоците од активното јазиче во датотека</translation>
+      <source>Export the data in the current tab to a file</source>
+      <translation>
+        Експортирај ги податоците од активното јазиче во датотека
+      </translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Експорт</translation>
+      <source>&amp;Export</source>
+      <translation>&amp;Експорт</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Избриши</translation>
+      <source>&amp;Delete</source>
+      <translation>&amp;Избриши</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AddressTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AskPassphraseDialog</name>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Внеси тајна фраза</translation>
+      <source>Enter passphrase</source>
+      <translation>Внеси тајна фраза</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Нова тајна фраза</translation>
+      <source>New passphrase</source>
+      <translation>Нова тајна фраза</translation>
     </message>
     <message>
-        <source>Repeat new passphrase</source>
-        <translation>Повторете ја новата тајна фраза</translation>
+      <source>Repeat new passphrase</source>
+      <translation>Повторете ја новата тајна фраза</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BanTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Sign &amp;message...</source>
-        <translation>Потпиши &amp;порака...</translation>
+      <source>Sign &amp;message...</source>
+      <translation>Потпиши &amp;порака...</translation>
     </message>
     <message>
-        <source>Synchronizing with network...</source>
-        <translation>Синхронизација со мрежата...</translation>
+      <source>Synchronizing with network...</source>
+      <translation>Синхронизација со мрежата...</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Преглед</translation>
+      <source>&amp;Overview</source>
+      <translation>&amp;Преглед</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Јазол</translation>
+      <source>Node</source>
+      <translation>Јазол</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Трансакции</translation>
+      <source>&amp;Transactions</source>
+      <translation>&amp;Трансакции</translation>
     </message>
     <message>
-        <source>Browse transaction history</source>
-        <translation>Преглед на историјата на трансакции</translation>
+      <source>Browse transaction history</source>
+      <translation>Преглед на историјата на трансакции</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>И&amp;злез</translation>
+      <source>E&amp;xit</source>
+      <translation>И&amp;злез</translation>
     </message>
     <message>
-        <source>Quit application</source>
-        <translation>Напушти ја апликацијата</translation>
+      <source>Quit application</source>
+      <translation>Напушти ја апликацијата</translation>
     </message>
     <message>
-        <source>About &amp;Qt</source>
-        <translation>За &amp;Qt</translation>
+      <source>About &amp;Qt</source>
+      <translation>За &amp;Qt</translation>
     </message>
     <message>
-        <source>Show information about Qt</source>
-        <translation>Прикажи информации за Qt</translation>
+      <source>Show information about Qt</source>
+      <translation>Прикажи информации за Qt</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Опции...</translation>
+      <source>&amp;Options...</source>
+      <translation>&amp;Опции...</translation>
     </message>
     <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Криптирање на Паричник...</translation>
+      <source>&amp;Encrypt Wallet...</source>
+      <translation>&amp;Криптирање на Паричник...</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Бекап на Паричник...</translation>
+      <source>&amp;Backup Wallet...</source>
+      <translation>&amp;Бекап на Паричник...</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Измени Тајна Фраза...</translation>
+      <source>&amp;Change Passphrase...</source>
+      <translation>&amp;Измени Тајна Фраза...</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Адреси за Испраќање...</translation>
+      <source>&amp;Sending addresses...</source>
+      <translation>&amp;Адреси за Испраќање...</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Адреси за Примање...</translation>
+      <source>&amp;Receiving addresses...</source>
+      <translation>&amp;Адреси за Примање...</translation>
     </message>
     <message>
-        <source>Open &amp;URI...</source>
-        <translation>Отвори &amp;URI...</translation>
+      <source>Open &amp;URI...</source>
+      <translation>Отвори &amp;URI...</translation>
     </message>
     <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Повторно индексирање на блокови од дискот...</translation>
+      <source>Reindexing blocks on disk...</source>
+      <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Испрати биткоини на Биткоин адреса</translation>
+      <source>Send coins to a Gandercoin address</source>
+      <translation>Испрати биткоини на Биткоин адреса</translation>
     </message>
     <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Потврди порака...</translation>
+      <source>&amp;Verify message...</source>
+      <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Биткоин</translation>
+      <source>Gandercoin</source>
+      <translation>Биткоин</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Паричник</translation>
+      <source>Wallet</source>
+      <translation>Паричник</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Испрати</translation>
+      <source>&amp;Send</source>
+      <translation>&amp;Испрати</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Прими</translation>
+      <source>&amp;Receive</source>
+      <translation>&amp;Прими</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Прикажи / Сокриј</translation>
+      <source>&amp;Show / Hide</source>
+      <translation>&amp;Прикажи / Сокриј</translation>
     </message>
     <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Криптирај ги приватните клучеви кои припаѓаат на твојот паричник</translation>
+      <source>Encrypt the private keys that belong to your wallet</source>
+      <translation>
+        Криптирај ги приватните клучеви кои припаѓаат на твојот паричник
+      </translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Подесувања</translation>
+      <source>&amp;Settings</source>
+      <translation>&amp;Подесувања</translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Помош</translation>
+      <source>&amp;Help</source>
+      <translation>&amp;Помош</translation>
     </message>
     <message numerus="yes">
-        <source>Processed %n block(s) of transaction history.</source>
-        <translation><numerusform>Обработен %n блок од историјата на трансакции.</numerusform><numerusform>Обработени %n блокови од историјата на трансакции.</numerusform></translation>
+      <source>Processed %n block(s) of transaction history.</source>
+      <translation>
+        <numerusform>
+          Обработен %n блок од историјата на трансакции.
+        </numerusform>
+        <numerusform>
+          Обработени %n блокови од историјата на трансакции.
+        </numerusform>
+      </translation>
     </message>
     <message>
-        <source>%1 behind</source>
-        <translation>%1 позади</translation>
+      <source>%1 behind</source>
+      <translation>%1 позади</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Грешка</translation>
+      <source>Error</source>
+      <translation>Грешка</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Предупредување</translation>
+      <source>Warning</source>
+      <translation>Предупредување</translation>
     </message>
     <message>
-        <source>Up to date</source>
-        <translation>Во тек</translation>
+      <source>Up to date</source>
+      <translation>Во тек</translation>
     </message>
     <message>
-        <source>Date: %1
-</source>
-        <translation>Дата: %1
-</translation>
+      <source>Date: %1</source>
+      <translation>Дата: %1</translation>
     </message>
     <message>
-        <source>Amount: %1
-</source>
-        <translation>Сума: %1
-</translation>
+      <source>Amount: %1</source>
+      <translation>Сума: %1</translation>
     </message>
     <message>
-        <source>Type: %1
-</source>
-        <translation>Тип: %1
-</translation>
+      <source>Type: %1</source>
+      <translation>Тип: %1</translation>
     </message>
     <message>
-        <source>Label: %1
-</source>
-        <translation>Етикета: %1
-</translation>
+      <source>Label: %1</source>
+      <translation>Етикета: %1</translation>
     </message>
     <message>
-        <source>Address: %1
-</source>
-        <translation>Адреса: %1
-</translation>
+      <source>Address: %1</source>
+      <translation>Адреса: %1</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Bytes:</source>
-        <translation>Бајти:</translation>
+      <source>Bytes:</source>
+      <translation>Бајти:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Сума:</translation>
+      <source>Amount:</source>
+      <translation>Сума:</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Провизија:</translation>
+      <source>Fee:</source>
+      <translation>Провизија:</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Прашина:</translation>
+      <source>Dust:</source>
+      <translation>Прашина:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После Провизија:</translation>
+      <source>After Fee:</source>
+      <translation>После Провизија:</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Кусур:</translation>
+      <source>Change:</source>
+      <translation>Кусур:</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Сума</translation>
+      <source>Amount</source>
+      <translation>Сума</translation>
     </message>
     <message>
-        <source>Date</source>
-        <translation>Дата</translation>
+      <source>Date</source>
+      <translation>Дата</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>EditAddressDialog</name>
     <message>
-        <source>Edit Address</source>
-        <translation>Измени Адреса</translation>
+      <source>Edit Address</source>
+      <translation>Измени Адреса</translation>
     </message>
     <message>
-        <source>&amp;Label</source>
-        <translation>&amp;Етикета</translation>
+      <source>&amp;Label</source>
+      <translation>&amp;Етикета</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
-        <translation>&amp;Адреса</translation>
+      <source>&amp;Address</source>
+      <translation>&amp;Адреса</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>FreespaceChecker</name>
     <message>
-        <source>name</source>
-        <translation>име</translation>
+      <source>name</source>
+      <translation>име</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>version</source>
-        <translation>верзија</translation>
+      <source>version</source>
+      <translation>верзија</translation>
     </message>
     <message>
-        <source>(%1-bit)</source>
-        <translation>(%1-бит)</translation>
+      <source>(%1-bit)</source>
+      <translation>(%1-бит)</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>Intro</name>
     <message>
-        <source>Error</source>
-        <translation>Грешка</translation>
+      <source>Error</source>
+      <translation>Грешка</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ModalOverlay</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open URI</source>
-        <translation>Отвори URI</translation>
+      <source>Open URI</source>
+      <translation>Отвори URI</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+      <source>URI:</source>
+      <translation>URI:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OptionsDialog</name>
     <message>
-        <source>Options</source>
-        <translation>Опции</translation>
+      <source>Options</source>
+      <translation>Опции</translation>
     </message>
     <message>
-        <source>MB</source>
-        <translation>МБ</translation>
+      <source>MB</source>
+      <translation>МБ</translation>
     </message>
     <message>
-        <source>&amp;Network</source>
-        <translation>&amp;Мрежа</translation>
+      <source>&amp;Network</source>
+      <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>W&amp;allet</source>
-        <translation>П&amp;аричник</translation>
+      <source>W&amp;allet</source>
+      <translation>П&amp;аричник</translation>
     </message>
     <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Прозорец</translation>
+      <source>&amp;Window</source>
+      <translation>&amp;Прозорец</translation>
     </message>
     <message>
-        <source>&amp;OK</source>
-        <translation>&amp;ОК</translation>
+      <source>&amp;OK</source>
+      <translation>&amp;ОК</translation>
     </message>
     <message>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Откажи</translation>
+      <source>&amp;Cancel</source>
+      <translation>&amp;Откажи</translation>
     </message>
     <message>
-        <source>none</source>
-        <translation>нема</translation>
+      <source>none</source>
+      <translation>нема</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OverviewPage</name>
     <message>
-        <source>Total:</source>
-        <translation>Вкупно:</translation>
+      <source>Total:</source>
+      <translation>Вкупно:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PaymentServer</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PeerTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject</name>
     <message>
-        <source>Amount</source>
-        <translation>Сума</translation>
+      <source>Amount</source>
+      <translation>Сума</translation>
     </message>
     <message>
-        <source>%1 d</source>
-        <translation>%1 д</translation>
+      <source>%1 d</source>
+      <translation>%1 д</translation>
     </message>
     <message>
-        <source>%1 h</source>
-        <translation>%1 ч</translation>
+      <source>%1 h</source>
+      <translation>%1 ч</translation>
     </message>
     <message>
-        <source>%1 m</source>
-        <translation>%1 м</translation>
+      <source>%1 m</source>
+      <translation>%1 м</translation>
     </message>
     <message>
-        <source>%1 s</source>
-        <translation>%1 с</translation>
+      <source>%1 s</source>
+      <translation>%1 с</translation>
     </message>
     <message>
-        <source>%1 ms</source>
-        <translation>%1 мс</translation>
+      <source>%1 ms</source>
+      <translation>%1 мс</translation>
     </message>
     <message>
-        <source>%1 and %2</source>
-        <translation>%1 и %2</translation>
+      <source>%1 and %2</source>
+      <translation>%1 и %2</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject::QObject</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QRImageWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RPCConsole</name>
     <message>
-        <source>Network</source>
-        <translation>Мрежа</translation>
+      <source>Network</source>
+      <translation>Мрежа</translation>
     </message>
     <message>
-        <source>Name</source>
-        <translation>Име</translation>
+      <source>Name</source>
+      <translation>Име</translation>
     </message>
     <message>
-        <source>Number of connections</source>
-        <translation>Број на конекции</translation>
+      <source>Number of connections</source>
+      <translation>Број на конекции</translation>
     </message>
     <message>
-        <source>Block chain</source>
-        <translation>Block chain</translation>
+      <source>Block chain</source>
+      <translation>Block chain</translation>
     </message>
     <message>
-        <source>Sent</source>
-        <translation>Испратени</translation>
+      <source>Sent</source>
+      <translation>Испратени</translation>
     </message>
     <message>
-        <source>Version</source>
-        <translation>Верзија</translation>
+      <source>Version</source>
+      <translation>Верзија</translation>
     </message>
     <message>
-        <source>&amp;Console</source>
-        <translation>&amp;Конзола</translation>
+      <source>&amp;Console</source>
+      <translation>&amp;Конзола</translation>
     </message>
     <message>
-        <source>%1 B</source>
-        <translation>%1 Б</translation>
+      <source>%1 B</source>
+      <translation>%1 Б</translation>
     </message>
     <message>
-        <source>%1 KB</source>
-        <translation>%1 КБ</translation>
+      <source>%1 KB</source>
+      <translation>%1 КБ</translation>
     </message>
     <message>
-        <source>%1 MB</source>
-        <translation>%1 МБ</translation>
+      <source>%1 MB</source>
+      <translation>%1 МБ</translation>
     </message>
     <message>
-        <source>%1 GB</source>
-        <translation>%1 ГБ</translation>
+      <source>%1 GB</source>
+      <translation>%1 ГБ</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Сума:</translation>
+      <source>&amp;Amount:</source>
+      <translation>&amp;Сума:</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Етикета:</translation>
+      <source>&amp;Label:</source>
+      <translation>&amp;Етикета:</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Порака:</translation>
+      <source>&amp;Message:</source>
+      <translation>&amp;Порака:</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Прикажи</translation>
+      <source>Show</source>
+      <translation>Прикажи</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR Код</translation>
+      <source>QR Code</source>
+      <translation>QR Код</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>Копирај &amp;URI</translation>
+      <source>Copy &amp;URI</source>
+      <translation>Копирај &amp;URI</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Копирај &amp;Адреса</translation>
+      <source>Copy &amp;Address</source>
+      <translation>Копирај &amp;Адреса</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Сними Слика...</translation>
+      <source>&amp;Save Image...</source>
+      <translation>&amp;Сними Слика...</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RecentRequestsTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsDialog</name>
     <message>
-        <source>Bytes:</source>
-        <translation>Бајти:</translation>
+      <source>Bytes:</source>
+      <translation>Бајти:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Сума:</translation>
+      <source>Amount:</source>
+      <translation>Сума:</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Провизија:</translation>
+      <source>Fee:</source>
+      <translation>Провизија:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После Провизија:</translation>
+      <source>After Fee:</source>
+      <translation>После Провизија:</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Кусур:</translation>
+      <source>Change:</source>
+      <translation>Кусур:</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Прашина:</translation>
+      <source>Dust:</source>
+      <translation>Прашина:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>Сума:</translation>
+      <source>A&amp;mount:</source>
+      <translation>Сума:</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Етикета:</translation>
+      <source>&amp;Label:</source>
+      <translation>&amp;Етикета:</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation>Порака:</translation>
+      <source>Message:</source>
+      <translation>Порака:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendConfirmationDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ShutdownWindow</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SignVerifyMessageDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SplashScreen</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TrafficGraphWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDesc</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDescDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionView</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletFrame</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletView</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
+      <source>Options:</source>
+      <translation>Опции:</translation>
     </message>
     <message>
-        <source>Litecoin Core</source>
-        <translation>Биткоин Core</translation>
+      <source>Gandercoin Core</source>
+      <translation>Биткоин Core</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Предупредување</translation>
+      <source>Warning</source>
+      <translation>Предупредување</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Грешка</translation>
+      <source>Error</source>
+      <translation>Грешка</translation>
     </message>
-</context>
-</TS>
+  </context>
+</TS>;

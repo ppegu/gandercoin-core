@@ -1,458 +1,473 @@
 <TS language="es_UY" version="2.1">
-<context>
+  <context>
     <name>AddressBookPage</name>
     <message>
-        <source>Right-click to edit address or label</source>
-        <translation>Clic derecho para editar dirección o etiqueta</translation>
+      <source>Right-click to edit address or label</source>
+      <translation>Clic derecho para editar dirección o etiqueta</translation>
     </message>
     <message>
-        <source>Create a new address</source>
-        <translation>Crear una nueva dirección </translation>
+      <source>Create a new address</source>
+      <translation>Crear una nueva dirección </translation>
     </message>
     <message>
-        <source>&amp;New</source>
-        <translation>Nuevo</translation>
+      <source>&amp;New</source>
+      <translation>Nuevo</translation>
     </message>
     <message>
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Copia la dirección seleccionada al portapapeles del sistema</translation>
+      <source>
+        Copy the currently selected address to the system clipboard
+      </source>
+      <translation>
+        Copia la dirección seleccionada al portapapeles del sistema
+      </translation>
     </message>
     <message>
-        <source>&amp;Copy</source>
-        <translation>Copiar</translation>
+      <source>&amp;Copy</source>
+      <translation>Copiar</translation>
     </message>
     <message>
-        <source>C&amp;lose</source>
-        <translation>Cerrar</translation>
+      <source>C&amp;lose</source>
+      <translation>Cerrar</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>Exportar</translation>
+      <source>&amp;Export</source>
+      <translation>Exportar</translation>
     </message>
     <message>
-        <source>&amp;Delete</source>
-        <translation>&amp;Borrar</translation>
+      <source>&amp;Delete</source>
+      <translation>&amp;Borrar</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AddressTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>AskPassphraseDialog</name>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Escriba la contraseña</translation>
+      <source>Enter passphrase</source>
+      <translation>Escriba la contraseña</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Nueva contraseña</translation>
+      <source>New passphrase</source>
+      <translation>Nueva contraseña</translation>
     </message>
     <message>
-        <source>Repeat new passphrase</source>
-        <translation>Repetir nueva contraseña</translation>
+      <source>Repeat new passphrase</source>
+      <translation>Repetir nueva contraseña</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BanTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Synchronizing with network...</source>
-        <translation>Sincronizando con la red...</translation>
+      <source>Synchronizing with network...</source>
+      <translation>Sincronizando con la red...</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Vista previa</translation>
+      <source>&amp;Overview</source>
+      <translation>&amp;Vista previa</translation>
     </message>
     <message>
-        <source>Show general overview of wallet</source>
-        <translation>Mostrar descripción general del monedero</translation>
+      <source>Show general overview of wallet</source>
+      <translation>Mostrar descripción general del monedero</translation>
     </message>
     <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;transaciones </translation>
+      <source>&amp;Transactions</source>
+      <translation>&amp;transaciones </translation>
     </message>
     <message>
-        <source>Browse transaction history</source>
-        <translation>Buscar en el historial de transacciones</translation>
+      <source>Browse transaction history</source>
+      <translation>Buscar en el historial de transacciones</translation>
     </message>
     <message>
-        <source>E&amp;xit</source>
-        <translation>Salida</translation>
+      <source>E&amp;xit</source>
+      <translation>Salida</translation>
     </message>
     <message>
-        <source>Quit application</source>
-        <translation>Salir de la aplicacion </translation>
+      <source>Quit application</source>
+      <translation>Salir de la aplicacion </translation>
     </message>
     <message>
-        <source>Show information about Qt</source>
-        <translation>Mostrar informacioón sobre</translation>
+      <source>Show information about Qt</source>
+      <translation>Mostrar informacioón sobre</translation>
     </message>
     <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Opciones...</translation>
+      <source>&amp;Options...</source>
+      <translation>&amp;Opciones...</translation>
     </message>
     <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Respaldar Billetera</translation>
+      <source>&amp;Backup Wallet...</source>
+      <translation>Respaldar Billetera</translation>
     </message>
     <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>Cambiar contraseña</translation>
+      <source>&amp;Change Passphrase...</source>
+      <translation>Cambiar contraseña</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>Enviando direcciones</translation>
+      <source>&amp;Sending addresses...</source>
+      <translation>Enviando direcciones</translation>
     </message>
     <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>Recibiendo direcciones</translation>
+      <source>&amp;Receiving addresses...</source>
+      <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
-        <translation>Enviar monedas a una dirección Litecoin</translation>
+      <source>Send coins to a Gandercoin address</source>
+      <translation>Enviar monedas a una dirección Gandercoin</translation>
     </message>
     <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
+      <source>Change the passphrase used for wallet encryption</source>
+      <translation>
+        Cambie la clave utilizada para el cifrado del monedero
+      </translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+      <source>Gandercoin</source>
+      <translation>Gandercoin</translation>
     </message>
     <message>
-        <source>Wallet</source>
-        <translation>Billetera</translation>
+      <source>Wallet</source>
+      <translation>Billetera</translation>
     </message>
     <message>
-        <source>&amp;Show / Hide</source>
-        <translation>Mostrar / Ocultar</translation>
+      <source>&amp;Show / Hide</source>
+      <translation>Mostrar / Ocultar</translation>
     </message>
     <message>
-        <source>&amp;File</source>
-        <translation>&amp;Archivo</translation>
+      <source>&amp;File</source>
+      <translation>&amp;Archivo</translation>
     </message>
     <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Configuracion </translation>
+      <source>&amp;Settings</source>
+      <translation>&amp;Configuracion </translation>
     </message>
     <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Ayuda</translation>
+      <source>&amp;Help</source>
+      <translation>&amp;Ayuda</translation>
     </message>
     <message>
-        <source>Tabs toolbar</source>
-        <translation>Barra de herramientas</translation>
+      <source>Tabs toolbar</source>
+      <translation>Barra de herramientas</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Error</translation>
+      <source>Error</source>
+      <translation>Error</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Alerta</translation>
+      <source>Warning</source>
+      <translation>Alerta</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>Información</translation>
+      <source>Information</source>
+      <translation>Información</translation>
     </message>
     <message>
-        <source>Up to date</source>
-        <translation>A la fecha</translation>
+      <source>Up to date</source>
+      <translation>A la fecha</translation>
     </message>
     <message>
-        <source>Catching up...</source>
-        <translation>Ponerse al dia...</translation>
+      <source>Catching up...</source>
+      <translation>Ponerse al dia...</translation>
     </message>
     <message>
-        <source>Type: %1
-</source>
-        <translation>Tipo: %1
-</translation>
+      <source>Type: %1</source>
+      <translation>Tipo: %1</translation>
     </message>
     <message>
-        <source>Address: %1
-</source>
-        <translation>Dirección: %1</translation>
+      <source>Address: %1</source>
+      <translation>Dirección: %1</translation>
     </message>
     <message>
-        <source>Sent transaction</source>
-        <translation>Transaccion enviada</translation>
+      <source>Sent transaction</source>
+      <translation>Transaccion enviada</translation>
     </message>
     <message>
-        <source>Incoming transaction</source>
-        <translation>Transacción entrante</translation>
+      <source>Incoming transaction</source>
+      <translation>Transacción entrante</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>El Monedero esta &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;desbloqueado&lt;/b&gt;</translation>
+      <source>
+        Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently
+        &lt;b&gt;unlocked&lt;/b&gt;
+      </source>
+      <translation>
+        El Monedero esta &lt;b&gt;cifrado&lt;/b&gt; y actualmente
+        &lt;b&gt;desbloqueado&lt;/b&gt;
+      </translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>El Monedero esta &lt;b&gt;cifrado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
+      <source>
+        Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently
+        &lt;b&gt;locked&lt;/b&gt;
+      </source>
+      <translation>
+        El Monedero esta &lt;b&gt;cifrado&lt;/b&gt; y actualmente
+        &lt;b&gt;bloqueado&lt;/b&gt;
+      </translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>CoinControlDialog</name>
     <message>
-        <source>Quantity:</source>
-        <translation>Cantidad:</translation>
+      <source>Quantity:</source>
+      <translation>Cantidad:</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+      <source>Bytes:</source>
+      <translation>Bytes:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>AMonto:</translation>
+      <source>Amount:</source>
+      <translation>AMonto:</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Cambio:</translation>
+      <source>Change:</source>
+      <translation>Cambio:</translation>
     </message>
     <message>
-        <source>Date</source>
-        <translation>Fecha</translation>
+      <source>Date</source>
+      <translation>Fecha</translation>
     </message>
     <message>
-        <source>Confirmed</source>
-        <translation>Confirmado</translation>
+      <source>Confirmed</source>
+      <translation>Confirmado</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>EditAddressDialog</name>
     <message>
-        <source>Edit Address</source>
-        <translation>Editar dirección</translation>
+      <source>Edit Address</source>
+      <translation>Editar dirección</translation>
     </message>
     <message>
-        <source>&amp;Label</source>
-        <translation>&amp;Etiqueta</translation>
+      <source>&amp;Label</source>
+      <translation>&amp;Etiqueta</translation>
     </message>
     <message>
-        <source>&amp;Address</source>
-        <translation>&amp;Direccion </translation>
+      <source>&amp;Address</source>
+      <translation>&amp;Direccion </translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>FreespaceChecker</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>HelpMessageDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>Intro</name>
     <message>
-        <source>Error</source>
-        <translation>Error</translation>
+      <source>Error</source>
+      <translation>Error</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Form</source>
-        <translation>Formulario</translation>
+      <source>Form</source>
+      <translation>Formulario</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OpenURIDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OptionsDialog</name>
     <message>
-        <source>Options</source>
-        <translation>Opciones</translation>
+      <source>Options</source>
+      <translation>Opciones</translation>
     </message>
     <message>
-        <source>W&amp;allet</source>
-        <translation>Billetera</translation>
+      <source>W&amp;allet</source>
+      <translation>Billetera</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>OverviewPage</name>
     <message>
-        <source>Form</source>
-        <translation>Formulario</translation>
+      <source>Form</source>
+      <translation>Formulario</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PaymentServer</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>PeerTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QObject::QObject</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>QRImageWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RPCConsole</name>
     <message>
-        <source>&amp;Information</source>
-        <translation>Información</translation>
+      <source>&amp;Information</source>
+      <translation>Información</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiqueta:</translation>
+      <source>&amp;Label:</source>
+      <translation>&amp;Etiqueta:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ReceiveRequestDialog</name>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Copiar Dirección</translation>
+      <source>Copy &amp;Address</source>
+      <translation>Copiar Dirección</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>RecentRequestsTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Enviar monedas</translation>
+      <source>Send Coins</source>
+      <translation>Enviar monedas</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Cantidad:</translation>
+      <source>Quantity:</source>
+      <translation>Cantidad:</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+      <source>Bytes:</source>
+      <translation>Bytes:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>AMonto:</translation>
+      <source>Amount:</source>
+      <translation>AMonto:</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Cambio:</translation>
+      <source>Change:</source>
+      <translation>Cambio:</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Enviar a varios destinatarios a la vez</translation>
+      <source>Send to multiple recipients at once</source>
+      <translation>Enviar a varios destinatarios a la vez</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>Balance:</translation>
+      <source>Balance:</source>
+      <translation>Balance:</translation>
     </message>
     <message>
-        <source>Confirm the send action</source>
-        <translation>Confirmar el envío</translation>
+      <source>Confirm the send action</source>
+      <translation>Confirmar el envío</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendCoinsEntry</name>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;Monto:</translation>
+      <source>A&amp;mount:</source>
+      <translation>A&amp;Monto:</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Pagar &amp;A:</translation>
+      <source>Pay &amp;To:</source>
+      <translation>Pagar &amp;A:</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiqueta:</translation>
+      <source>&amp;Label:</source>
+      <translation>&amp;Etiqueta:</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+      <source>Alt+A</source>
+      <translation>Alt+A</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar la dirección desde el portapapeles</translation>
+      <source>Paste address from clipboard</source>
+      <translation>Pegar la dirección desde el portapapeles</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+      <source>Alt+P</source>
+      <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>Pagar A:</translation>
+      <source>Pay To:</source>
+      <translation>Pagar A:</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SendConfirmationDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>ShutdownWindow</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+      <source>Alt+A</source>
+      <translation>Alt+A</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Pegar la dirección desde el portapapeles</translation>
+      <source>Paste address from clipboard</source>
+      <translation>Pegar la dirección desde el portapapeles</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+      <source>Alt+P</source>
+      <translation>Alt+P</translation>
     </message>
-    </context>
-<context>
+  </context>
+  <context>
     <name>SplashScreen</name>
     <message>
-        <source>[testnet]</source>
-        <translation>[prueba_de_red]</translation>
+      <source>[testnet]</source>
+      <translation>[prueba_de_red]</translation>
     </message>
-</context>
-<context>
+  </context>
+  <context>
     <name>TrafficGraphWidget</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDesc</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionDescDialog</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionTableModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>TransactionView</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletFrame</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletModel</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>WalletView</name>
-    </context>
-<context>
+  </context>
+  <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Options:</source>
-        <translation>Opciones:</translation>
+      <source>Options:</source>
+      <translation>Opciones:</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>Información</translation>
+      <source>Information</source>
+      <translation>Información</translation>
     </message>
     <message>
-        <source>Warning</source>
-        <translation>Alerta</translation>
+      <source>Warning</source>
+      <translation>Alerta</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Error</translation>
+      <source>Error</source>
+      <translation>Error</translation>
     </message>
-</context>
-</TS>
+  </context>
+</TS>;

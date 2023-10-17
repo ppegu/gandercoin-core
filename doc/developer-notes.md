@@ -1,5 +1,4 @@
-Developer Notes
-===============
+# Developer Notes
 
 Various coding styles have been used during the history of the codebase,
 and the result is not very consistent. However, we're now trying to converge to
@@ -22,6 +21,7 @@ to clean up the patch automatically before submitting a pull request.
   - `++i` is preferred over `i++`.
 
 Block style example:
+
 ```c++
 namespace foo
 {
@@ -48,12 +48,12 @@ class Class
 }
 ```
 
-Doxygen comments
------------------
+## Doxygen comments
 
 To facilitate the generation of documentation, use doxygen-compatible comment blocks for functions, methods and fields.
 
 For example, to describe a function use:
+
 ```c++
 /**
  * ... text ...
@@ -63,11 +63,13 @@ For example, to describe a function use:
  */
 bool function(int arg1, const char *arg2)
 ```
+
 A complete list of `@xxx` commands can be found at http://www.stack.nl/~dimitri/doxygen/manual/commands.html.
 As Doxygen recognizes the comments by the delimiters (`/**` and `*/` in this case), you don't
-*need* to provide any commands for a comment to be valid; just a description text is fine.
+_need_ to provide any commands for a comment to be valid; just a description text is fine.
 
 To describe a class use the same construct above the class definition:
+
 ```c++
 /**
  * Alerts are for notifying old versions if they become too obsolete and
@@ -79,17 +81,20 @@ class CAlert
 ```
 
 To describe a member or variable use:
+
 ```c++
 int var; //!< Detailed description after the member
 ```
 
 or
+
 ```cpp
 //! Description before the member
 int var;
 ```
 
 Also OK:
+
 ```c++
 ///
 /// ... text ...
@@ -98,6 +103,7 @@ bool function2(int arg1, const char *arg2)
 ```
 
 Not OK (used plenty in the current source, but not picked up):
+
 ```c++
 //
 // ... text ...
@@ -107,8 +113,7 @@ Not OK (used plenty in the current source, but not picked up):
 A full list of comment syntaxes picked up by doxygen can be found at http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html,
 but if possible use one of the above styles.
 
-Development tips and tricks
----------------------------
+## Development tips and tricks
 
 **compiling for debugging**
 
@@ -137,13 +142,12 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-Litecoin Core is a multithreaded application, and deadlocks or other multithreading bugs
+Gandercoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.
 
-Locking/mutex usage notes
--------------------------
+## Locking/mutex usage notes
 
 The code is multi-threaded, and uses mutexes and the
 LOCK/TRY_LOCK macros to protect data structures.
@@ -159,12 +163,11 @@ between the various components is a goal, with any necessary locking
 done by the components (e.g. see the self-contained CKeyStore class
 and its cs_KeyStore lock for example).
 
-Threads
--------
+## Threads
 
 - ThreadScriptCheck : Verifies block scripts.
 
-- ThreadImport : Loads blocks from blk*.dat files or bootstrap.dat.
+- ThreadImport : Loads blocks from blk\*.dat files or bootstrap.dat.
 
 - StartNode : Starts other threads.
 
@@ -190,13 +193,12 @@ Threads
 
 - Shutdown : Does an orderly shutdown of everything.
 
-Ignoring IDE/editor files
---------------------------
+## Ignoring IDE/editor files
 
 In closed-source environments in which everyone uses the same IDE it is common
 to add temporary files it produces to the project-wide `.gitignore` file.
 
-However, in open source software such as Litecoin Core, where everyone uses
+However, in open source software such as Gandercoin Core, where everyone uses
 their own editors/IDE/tools, it is less common. Only you know what files your
 editor produces and this may change from version to version. The canonical way
 to do this is thus to create your local gitignore. Add this to `~/.gitconfig`:
@@ -210,6 +212,7 @@ to do this is thus to create your local gitignore. Add this to `~/.gitconfig`:
 on a terminal)
 
 Then put your favourite tool's temporary filenames in that file, e.g.
+
 ```
 # NetBeans
 nbproject/
@@ -222,81 +225,76 @@ If a set of tools is used by the build system or scripts the repository (for
 example, lcov) it is perfectly acceptable to add its files to `.gitignore`
 and commit them.
 
-Development guidelines
-============================
+# Development guidelines
 
 A few non-style-related recommendations for developers, as well as points to
-pay attention to for reviewers of Litecoin Core code.
+pay attention to for reviewers of Gandercoin Core code.
 
-General Litecoin Core
-----------------------
+## General Gandercoin Core
 
 - New features should be exposed on RPC first, then can be made available in the GUI
 
-  - *Rationale*: RPC allows for better automatic testing. The test suite for
+  - _Rationale_: RPC allows for better automatic testing. The test suite for
     the GUI is very limited
 
 - Make sure pull requests pass Travis CI before merging
 
-  - *Rationale*: Makes sure that they pass thorough testing, and that the tester will keep passing
-     on the master branch. Otherwise all new pull requests will start failing the tests, resulting in
-     confusion and mayhem
+  - _Rationale_: Makes sure that they pass thorough testing, and that the tester will keep passing
+    on the master branch. Otherwise all new pull requests will start failing the tests, resulting in
+    confusion and mayhem
 
-  - *Explanation*: If the test suite is to be updated for a change, this has to
+  - _Explanation_: If the test suite is to be updated for a change, this has to
     be done first
 
-Wallet
--------
+## Wallet
 
 - Make sure that no crashes happen with run-time option `-disablewallet`.
 
-  - *Rationale*: In RPC code that conditionally uses the wallet (such as
+  - _Rationale_: In RPC code that conditionally uses the wallet (such as
     `validateaddress`) it is easy to forget that global pointer `pwalletMain`
     can be NULL. See `qa/rpc-tests/disablewallet.py` for functional tests
     exercising the API with `-disablewallet`
 
 - Include `db_cxx.h` (BerkeleyDB header) only when `ENABLE_WALLET` is set
 
-  - *Rationale*: Otherwise compilation of the disable-wallet build will fail in environments without BerkeleyDB
+  - _Rationale_: Otherwise compilation of the disable-wallet build will fail in environments without BerkeleyDB
 
-General C++
--------------
+## General C++
 
 - Assertions should not have side-effects
 
-  - *Rationale*: Even though the source code is set to to refuse to compile
+  - _Rationale_: Even though the source code is set to to refuse to compile
     with assertions disabled, having side-effects in assertions is unexpected and
     makes the code harder to understand
 
 - If you use the `.h`, you must link the `.cpp`
 
-  - *Rationale*: Include files define the interface for the code in implementation files. Including one but
-      not linking the other is confusing. Please avoid that. Moving functions from
-      the `.h` to the `.cpp` should not result in build errors
+  - _Rationale_: Include files define the interface for the code in implementation files. Including one but
+    not linking the other is confusing. Please avoid that. Moving functions from
+    the `.h` to the `.cpp` should not result in build errors
 
 - Use the RAII (Resource Acquisition Is Initialization) paradigm where possible. For example by using
   `unique_ptr` for allocations in a function.
 
-  - *Rationale*: This avoids memory and resource leaks, and ensures exception safety
+  - _Rationale_: This avoids memory and resource leaks, and ensures exception safety
 
-C++ data structures
---------------------
+## C++ data structures
 
 - Never use the `std::map []` syntax when reading from a map, but instead use `.find()`
 
-  - *Rationale*: `[]` does an insert (of the default element) if the item doesn't
+  - _Rationale_: `[]` does an insert (of the default element) if the item doesn't
     exist in the map yet. This has resulted in memory leaks in the past, as well as
-    race conditions (expecting read-read behavior). Using `[]` is fine for *writing* to a map
+    race conditions (expecting read-read behavior). Using `[]` is fine for _writing_ to a map
 
 - Do not compare an iterator from one data structure with an iterator of
   another data structure (even if of the same type)
 
-  - *Rationale*: Behavior is undefined. In C++ parlor this means "may reformat
+  - _Rationale_: Behavior is undefined. In C++ parlor this means "may reformat
     the universe", in practice this has resulted in at least one hard-to-debug crash bug
 
 - Watch out for out-of-bounds vector access. `&vch[vch.size()]` is illegal,
   including `&vch[0]` for an empty vector. Use `vch.data()` and `vch.data() +
-  vch.size()` instead.
+vch.size()` instead.
 
 - Vector bounds checking is only enabled in debug mode. Do not rely on it
 
@@ -304,7 +302,7 @@ C++ data structures
   good reason (i.e., optimization on the critical path), add an explicit
   comment about this
 
-  - *Rationale*: Ensure determinism by avoiding accidental use of uninitialized
+  - _Rationale_: Ensure determinism by avoiding accidental use of uninitialized
     values. Also, static analyzers balk about this.
 
 - Use explicitly signed or unsigned `char`s, or even better `uint8_t` and
@@ -315,33 +313,31 @@ C++ data structures
 
 - Prefer explicit constructions over implicit ones that rely on 'magical' C++ behavior
 
-  - *Rationale*: Easier to understand what is happening, thus easier to spot mistakes, even for those
-  that are not language lawyers
+  - _Rationale_: Easier to understand what is happening, thus easier to spot mistakes, even for those
+    that are not language lawyers
 
-Strings and formatting
-------------------------
+## Strings and formatting
 
 - Be careful of `LogPrint` versus `LogPrintf`. `LogPrint` takes a `category` argument, `LogPrintf` does not.
 
-  - *Rationale*: Confusion of these can result in runtime exceptions due to
+  - _Rationale_: Confusion of these can result in runtime exceptions due to
     formatting mismatch, and it is easy to get wrong because of subtly similar naming
 
 - Use `std::string`, avoid C string manipulation functions
 
-  - *Rationale*: C++ string handling is marginally safer, less scope for
+  - _Rationale_: C++ string handling is marginally safer, less scope for
     buffer overflows and surprises with `\0` characters. Also some C string manipulations
     tend to act differently depending on platform, or even the user locale
 
 - Use `ParseInt32`, `ParseInt64`, `ParseUInt32`, `ParseUInt64`, `ParseDouble` from `utilstrencodings.h` for number parsing
 
-  - *Rationale*: These functions do overflow checking, and avoid pesky locale issues
+  - _Rationale_: These functions do overflow checking, and avoid pesky locale issues
 
 - For `strprintf`, `LogPrint`, `LogPrintf` formatting characters don't need size specifiers
 
-  - *Rationale*: Litecoin Core uses tinyformat, which is type safe. Leave them out to avoid confusion
+  - _Rationale_: Gandercoin Core uses tinyformat, which is type safe. Leave them out to avoid confusion
 
-Variable names
---------------
+## Variable names
 
 The shadowing warning (`-Wshadow`) is enabled by default. It prevents issues rising
 from using a different variable with the same name.
@@ -365,9 +361,7 @@ AddressBookPage::AddressBookPage(Mode _mode) :
 When using nested cycles, do not name the inner cycle variable the same as in
 upper cycle etc.
 
-
-Threads and synchronization
-----------------------------
+## Threads and synchronization
 
 - Build and run tests with `-DDEBUG_LOCKORDER` to verify that no potential
   deadlocks are introduced. As of 0.12, this is defined by default when
@@ -386,7 +380,7 @@ Threads and synchronization
 }
 ```
 
-  Wrong:
+Wrong:
 
 ```c++
 TRY_LOCK(cs_vNodes, lockNodes);
@@ -395,40 +389,37 @@ TRY_LOCK(cs_vNodes, lockNodes);
 }
 ```
 
-Source code organization
---------------------------
+## Source code organization
 
 - Implementation code should go into the `.cpp` file and not the `.h`, unless necessary due to template usage or
   when performance due to inlining is critical
 
-  - *Rationale*: Shorter and simpler header files are easier to read, and reduce compile time
+  - _Rationale_: Shorter and simpler header files are easier to read, and reduce compile time
 
 - Don't import anything into the global namespace (`using namespace ...`). Use
   fully specified types such as `std::string`.
 
-  - *Rationale*: Avoids symbol conflicts
+  - _Rationale_: Avoids symbol conflicts
 
-GUI
------
+## GUI
 
 - Do not display or manipulate dialogs in model code (classes `*Model`)
 
-  - *Rationale*: Model classes pass through events and data from the core, they
+  - _Rationale_: Model classes pass through events and data from the core, they
     should not interact with the user. That's where View classes come in. The converse also
     holds: try to not directly access core data structures from Views.
 
-Subtrees
-----------
+## Subtrees
 
 Several parts of the repository are subtrees of software maintained elsewhere.
 
-Some of these are maintained by active developers of Litecoin Core, in which case changes should probably go
-directly upstream without being PRed directly against the project.  They will be merged back in the next
+Some of these are maintained by active developers of Gandercoin Core, in which case changes should probably go
+directly upstream without being PRed directly against the project. They will be merged back in the next
 subtree merge.
 
-Others are external projects without a tight relationship with our project.  Changes to these should also
-be sent upstream but bugfixes may also be prudent to PR against Litecoin Core so that they can be integrated
-quickly.  Cosmetic changes should be purely taken upstream.
+Others are external projects without a tight relationship with our project. Changes to these should also
+be sent upstream but bugfixes may also be prudent to PR against Gandercoin Core so that they can be integrated
+quickly. Cosmetic changes should be purely taken upstream.
 
 There is a tool in contrib/devtools/git-subtree-check.sh to check a subtree directory for consistency with
 its upstream repository.
@@ -436,20 +427,21 @@ its upstream repository.
 Current subtrees include:
 
 - src/leveldb
+
   - Upstream at https://github.com/google/leveldb ; Maintained by Google, but open important PRs to Core to avoid delay
 
 - src/libsecp256k1
+
   - Upstream at https://github.com/bitcoin-core/secp256k1/ ; actively maintaned by Core contributors.
 
 - src/crypto/ctaes
+
   - Upstream at https://github.com/bitcoin-core/ctaes ; actively maintained by Core contributors.
 
 - src/univalue
   - Upstream at https://github.com/jgarzik/univalue ; report important PRs to Core to avoid delay.
 
-
-Git and GitHub tips
----------------------
+## Git and GitHub tips
 
 - For resolving merge/rebase conflicts, it can be useful to enable diff3 style using
   `git config merge.conflictstyle diff3`. Instead of
@@ -471,14 +463,14 @@ Git and GitHub tips
         >>>
 
   This may make it much clearer what caused the conflict. In this style, you can often just look
-  at what changed between *original* and *theirs*, and mechanically apply that to *yours* (or the other way around).
+  at what changed between _original_ and _theirs_, and mechanically apply that to _yours_ (or the other way around).
 
 - When reviewing patches which change indentation in C++ files, use `git diff -w` and `git show -w`. This makes
   the diff algorithm ignore whitespace changes. This feature is also available on github.com, by adding `?w=1`
   at the end of any URL which shows a diff.
 
 - When reviewing patches that change symbol names in many places, use `git diff --word-diff`. This will instead
-  of showing the patch as deleted/added *lines*, show deleted/added *words*.
+  of showing the patch as deleted/added _lines_, show deleted/added _words_.
 
 - When reviewing patches that move code around, try using
   `git diff --patience commit~:old/file.cpp commit:new/file/name.cpp`, and ignoring everything except the
@@ -490,7 +482,7 @@ Git and GitHub tips
 
         [remote "upstream-pull"]
                 fetch = +refs/pull/*:refs/remotes/upstream-pull/*
-                url = git@github.com:litecoin-project/litecoin.git
+                url = git@github.com:gandercoin-project/gandercoin.git
 
   This will add an `upstream-pull` remote to your git repository, which can be fetched using `git fetch --all`
   or `git fetch upstream-pull`. Afterwards, you can use `upstream-pull/NUMBER/head` in arguments to `git show`,
